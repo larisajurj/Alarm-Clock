@@ -1,7 +1,0 @@
-O apasare scurta: maxim 10 ms
-O apasare lunga: minim 500 ms
-
-dintr-un clock de 1s vreau asa:
-				ajung la unul de 10ms: creste cu rapiditate
-				sau ramane unul mai mare, semnal odata cu apasarea
-

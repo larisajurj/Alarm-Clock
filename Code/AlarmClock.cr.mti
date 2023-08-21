@@ -1,0 +1,72 @@
+{D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CountTime_tb
+
+Top level modules:
+	CountTime_tb
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/RingCounter.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/RingCounter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RingCounter
+
+Top level modules:
+	RingCounter
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CountTime
+
+Top level modules:
+	CountTime
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Display_tb
+
+Top level modules:
+	Display_tb
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Display
+
+Top level modules:
+	Display
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MUX8to1
+
+Top level modules:
+	MUX8to1
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Lab3/fsm.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Lab3/fsm.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module control_fsm
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DigitToLED
+
+Top level modules:
+	DigitToLED
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/SingleClockDivider.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/SingleClockDivider.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SingleClockDivider
+
+Top level modules:
+	SingleClockDivider
+
+} {} {}}

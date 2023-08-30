@@ -12,12 +12,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	RingCounter
 
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ClockDivider
+
+Top level modules:
+	ClockDivider
+
 } {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module CountTime
 
 Top level modules:
 	CountTime
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module debounce
+
+Top level modules:
+	debounce
 
 } {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -33,20 +47,37 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Display
 
-} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v}
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v} {0 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MUX8to1
+** Error: (vlog-13053) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(28): near "'A": Illegal base specifier in numeric constant.
+** Error: D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(28): (vlog-2730) Undefined variable: 'd'.
+** Error: (vlog-13069) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(28): near "'A": syntax error, unexpected BASE, expecting ';'.
+** Error: (vlog-13057) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(28): Expecting numeric digits.
+** Error: (vlog-13053) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(34): near "'A": Illegal base specifier in numeric constant.
+** Error: (vlog-13069) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(34): near "'A": syntax error, unexpected BASE, expecting ';'.
+** Error: (vlog-13057) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(34): Expecting numeric digits.
+** Error: (vlog-13053) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(40): near "'A": Illegal base specifier in numeric constant.
+** Error: (vlog-13069) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(40): near "'A": syntax error, unexpected BASE, expecting ';'.
+** Error: (vlog-13057) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(40): Expecting numeric digits.
+** Error: (vlog-13053) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(46): near "'A": Illegal base specifier in numeric constant.
+** Error: (vlog-13069) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(46): near "'A": syntax error, unexpected BASE, expecting ';'.
+** Error: (vlog-13057) D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v(46): Expecting numeric digits.
 
-Top level modules:
-	MUX8to1
-
-} {} {}} {D:/Personal stuff/Ethergate lab/Lab3/fsm.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Lab3/fsm.v}
+} {4.0 17.0} {}} {D:/Personal stuff/Ethergate lab/Lab3/fsm.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Lab3/fsm.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module control_fsm
 -- Compiling module tb_top
 
 Top level modules:
 	tb_top
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module debouncer_tb_2
+
+Top level modules:
+	debouncer_tb_2
 
 } {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -68,5 +99,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	SingleClockDivider
+
+} {} {}} {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v} {1 {vlog -work work -stats=none {D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module randomize_button_noise
+
+Top level modules:
+	randomize_button_noise
 
 } {} {}}

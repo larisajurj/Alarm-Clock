@@ -23,49 +23,49 @@ module LongShortPressesDetector(
     assign signal = (sel_ff) ? div_clk : signal_ff;
 
     always @(*) begin
-        state_nxt = state_ff;
+        state_nxt = state_ff; //!!
         count_ff = count_nxt;
         sel_ff = sel_nxt;
-    case(state_ff)
-        STATE_IDLE: begin
-            count_nxt = 8'b0;
-            sel_nxt = 1'b0;
-            signal_nxt = 1'b0;
-            if(plus_button | minus_button) begin
-                state_nxt = STATE_INCREMENT_SHORT_PRESS;
-            end
-        end
-        STATE_INCREMENT_SHORT_PRESS: begin
-            if(plus_button | minus_button) begin
-                state_nxt  = STATE_SHORT_PRESS;
-                count_nxt  = 8'b1;
-                signal_nxt = 1'b1; //one single pulse
-            end else begin
-                state_nxt = STATE_IDLE;
-            end
-        end
-        STATE_SHORT_PRESS: begin
-            signal_nxt = 1'b0;
-            if(plus_button | minus_button) begin
-                count_nxt = count_ff + 8'b1;
-                if(count_nxt === 8'd10) begin //will be 250 actually
-                    state_nxt = STATE_LONG_PRESS;
+        case(state_ff)
+            STATE_IDLE: begin
+                count_nxt = 8'b0;
+                sel_nxt = 1'b0;
+                signal_nxt = 1'b0;
+                if(plus_button | minus_button) begin
+                    state_nxt = STATE_INCREMENT_SHORT_PRESS;
                 end
-            end else begin
-                state_nxt = STATE_IDLE;
             end
-        end
-        STATE_LONG_PRESS: begin
-            sel_nxt = 1'b1;
-            if(plus_button | minus_button) begin
-                
-            end else begin
-                state_nxt = STATE_IDLE;
+            STATE_INCREMENT_SHORT_PRESS: begin
+                if(plus_button | minus_button) begin
+                    state_nxt  = STATE_SHORT_PRESS;
+                    count_nxt  = 8'b1;
+                    signal_nxt = 1'b1; //one single pulse
+                end else begin
+                    state_nxt = STATE_IDLE;
+                end
             end
-        end
-        default: begin
-        end
-    endcase
+            STATE_SHORT_PRESS: begin
+                signal_nxt = 1'b0;
+                if(plus_button | minus_button) begin
+                    count_nxt = count_ff + 8'b1;
+                    if(count_nxt === 8'd10) begin //will be 250 actually
+                        state_nxt = STATE_LONG_PRESS;
+                    end
+                end else begin
+                    state_nxt = STATE_IDLE;
+                end
+            end
+            STATE_LONG_PRESS: begin
+                sel_nxt = 1'b1;
+                if(plus_button | minus_button) begin
+                    
+                end else begin
+                    state_nxt = STATE_IDLE;
+                end
+            end
+            default: begin
+            end
+        endcase
     end   
 
     always @ (posedge clk or posedge rst) begin

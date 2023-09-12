@@ -1,12 +1,12 @@
 `timescale 1ms/1ms
-module debounce (input clk,rst,d, output q);  
+module SingleDebouncer(input clk,rst_n,d, output q);  
   // internal signal definition
   reg val_d1, val_d2, val_save;
   
   assign q = val_save;
   
-  always @(posedge clk or posedge rst) begin
-    if(rst) begin
+  always @(posedge clk or negedge rst_n) begin
+    if(~rst_n) begin
       val_d1   <= 1'b0;
       val_d2   <= 1'b0;
       val_save <= 1'b0;

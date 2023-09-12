@@ -1,19 +1,18 @@
 `timescale 1ms/1ms
 module debouncer_tb();
-    reg  clk;
-    reg rst;
-    wire q;
-    reg d;
+    wire d1; wire d2; wire d3; wire d4; wire d5;
+    reg clk, rst_n;
+    wire q1; wire q2; wire q3; wire q4; wire q5;
 
-    reg [5:0] disturbance_time_slot;
-    reg [5:0] disruptions; 
-    reg [5:0] length_of_disruptions;
-    
+    randomNoiseDebouncer random_presses1(clk, d1);
+    randomNoiseDebouncer random_presses2(clk, d2);
+    randomNoiseDebouncer random_presses3(clk, d3);
+    randomNoiseDebouncer random_presses4(clk, d4);
+    randomNoiseDebouncer random_presses5(clk, d5);
 
-    integer j, k, tests,t;
-
-
-    debounce d1(clk,rst,d,q);
+    Debouncer deb(clk, rst_n,
+                 d1, d2, d3, d4, d5,
+                 q1, q2, q3, q4, q5);
 
     initial begin
         clk = 1'b0;
@@ -21,53 +20,9 @@ module debouncer_tb();
     end
 
     initial begin
-        rst = 1'b1;
-        #1 rst = 1'b0;
-        for(tests = 0; tests < 5; tests = tests + 1)begin
-            #1
-            disturbance_time_slot = $urandom_range(10,30); 
-            disruptions = $urandom_range(4,7);
-            #1
-            d = 1'b1;
-            for(j = 0;( j < disruptions )&& (disturbance_time_slot != 0); j = j + 1) begin
-                #1
-                length_of_disruptions = $urandom_range(1,3);
-                d = 1'b1;
-                disturbance_time_slot = disturbance_time_slot - 'b1;
-                for(k = 0; (k < length_of_disruptions) && (disturbance_time_slot != 0); k = k + 1) begin
-                    #1
-                    d = 1'b0;
-                    disturbance_time_slot = disturbance_time_slot - 'b1;
-                end
-            end
-
-           // for(t = 0; t < 40; t = t + 1) begin
-                #1 d = 1'b1;
-            //end
-                #40; 
-
-            disturbance_time_slot = $urandom_range(10,30); 
-            disruptions = $urandom_range(4,7);
-            #1
-            d = 1'b1;
-            for(j = 0;( j < disruptions )&& (disturbance_time_slot != 0); j = j + 1) begin
-                #1
-                length_of_disruptions = $urandom_range(1,3);
-                d = 1'b1;
-                disturbance_time_slot = disturbance_time_slot - 'b1;
-                for(k = 0; (k < length_of_disruptions) && (disturbance_time_slot != 0); k = k + 1) begin
-                    #1
-                    d = 1'b0;
-                    disturbance_time_slot = disturbance_time_slot - 'b1;
-                end
-            end
-
-            //or(t = 0; t < 30; t = t + 1) begin
-                #1 d = 1'b0;
-                #30;
-            //end 
-        end
+        rst_n = 1'b0;
+        #1 rst_n = 1'b1;
+        #1000;
         $finish();
-        
     end
 endmodule

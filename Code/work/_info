@@ -7,14 +7,14 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/Programs/ModelSim
+Z0 dD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code
 vClockDivider
-Z0 !s110 1693381242
+Z1 !s110 1694519631
 !i10b 1
 !s100 nMaLY5[jV3m62S4AMSkzK3
 IM[h7cZZ7`9fglem67T`a;1
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
 w1691761370
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1693381242.000000
+Z4 !s108 1694519631.000000
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/ClockDivider.v|
 !i113 1
@@ -31,34 +31,34 @@ Z5 o-work work
 Z6 tCvgOpt 0
 n@clock@divider
 vcontrol_fsm
-Z7 !s110 1693381243
+R1
 !i10b 1
 !s100 @>f:GTH?091;VB<UIB][O1
 IgWlDRY=W2@SRPIzbSkg]P1
-R1
 R2
-Z8 w1682517859
-Z9 8D:/Personal stuff/Ethergate lab/Lab3/fsm.v
-Z10 FD:/Personal stuff/Ethergate lab/Lab3/fsm.v
+R0
+Z7 w1682517859
+Z8 8D:/Personal stuff/Ethergate lab/Lab3/fsm.v
+Z9 FD:/Personal stuff/Ethergate lab/Lab3/fsm.v
 L0 5
 R3
 r1
 !s85 0
 31
-Z11 !s108 1693381243.000000
-Z12 !s107 D:/Personal stuff/Ethergate lab/Lab3/fsm.v|
-Z13 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Lab3/fsm.v|
+R4
+Z10 !s107 D:/Personal stuff/Ethergate lab/Lab3/fsm.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Lab3/fsm.v|
 !i113 1
 R5
 R6
 vCounter
-R7
-!i10b 1
-!s100 <TU71Mjm@aFJSfQ6gj1Dz1
-I`LMe0AScLaS5T?AzI7MWF0
 R1
+!i10b 1
+!s100 ISe=:QDUQeeaQd:@41Zla0
+Im27VMbMhPzD_AnkVQMJ0]1
 R2
-w1691665179
+R0
+w1694466515
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v
 L0 1
@@ -66,21 +66,42 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter.v|
 !i113 1
 R5
 R6
 n@counter
-vCountTime
-R7
-!i10b 1
-!s100 ^IBEdbMHAD1JFmhmg3So40
-IMlo?^LjQALIl?L]X@^j=a1
+vcounter_tb
 R1
+!i10b 1
+!s100 L82<S;J]Y^?h:2RNnBRz60
+IBgP`eg0gNgX[kZLadbW:@0
 R2
-w1691666820
+R0
+w1694466601
+8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter_tb.v
+FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/Counter_tb.v|
+!i113 1
+R5
+R6
+vCountTime
+R1
+!i10b 1
+!s100 bSL^[aj?mW^;`cDQ8@]7_2
+ILFOMWZI<]_3hHKL:dehPh2
+R2
+R0
+w1694467095
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v
 L0 2
@@ -88,7 +109,7 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime.v|
 !i113 1
@@ -96,13 +117,13 @@ R5
 R6
 n@count@time
 vCountTime_tb
-R7
-!i10b 1
-!s100 H4FKOefK<BdoF1[LO>2Z`2
-IHSn=Miz0mdAHT9Qm7UE;Q1
 R1
+!i10b 1
+!s100 nL[N5:ARNSG3]JMKia<m=0
+ICNmo]^>W7em4>@W3E=9fS3
 R2
-w1691666592
+R0
+w1694467180
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v
 L0 3
@@ -110,63 +131,21 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Count Time/CountTime_tb.v|
 !i113 1
 R5
 R6
 n@count@time_tb
-vdebounce
-R7
-!i10b 1
-!s100 mFlI@MYSSh^J1Z^1kQ;BI3
-I@;D=Vfh>MY0;3hcd3MifK0
+vDebouncer
 R1
-R2
-w1692718443
-8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v
-FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v
-L0 2
-R3
-r1
-!s85 0
-31
-R11
-!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v|
-!i113 1
-R5
-R6
-vdebouncer_tb
-R7
 !i10b 1
-!s100 VYaK;FDU@9oC^eDU3Nhof1
-I5V6TV[_G^:SBOlVNJlCaX2
-R1
+!s100 oX;I8jD`Xme5zU<XO1o9=3
+Io7_mAL6GRL[4?^oPbMT2`3
 R2
-w1693381232
-8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v
-FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v
-L0 2
-R3
-r1
-!s85 0
-31
-R11
-!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v|
-!i113 1
-R5
-R6
-vdebouncer_tb_2
-R7
-!i10b 1
-!s100 a[8VJkKUOG328A:WN4C2F2
-IK953ZZfdE23_HSM61Uc_:0
-R1
-R2
-w1692821804
+R0
+w1694468174
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v
 L0 2
@@ -174,19 +153,41 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer.v|
 !i113 1
 R5
 R6
-vDigitToLED
+n@debouncer
+vdebouncer_tb
+R1
+!i10b 1
+!s100 8@4:_^1ZLSIZfD6Wd=NT<2
+I]lLk<aHeOQeSk95?5^H@^3
+R2
 R0
+w1694519597
+8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v
+FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/Debouncer_tb.v|
+!i113 1
+R5
+R6
+vDigitToLED
+!s110 1694519630
 !i10b 1
 !s100 jm1Q?`ol9WLf45oX5e58=3
 Ibn54kG0NJ8<PXHcmYXAH91
-R1
 R2
+R0
 w1692618987
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v
@@ -195,7 +196,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z12 !s108 1694519630.000000
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/DigitToLED.v|
 !i113 1
@@ -203,12 +204,12 @@ R5
 R6
 n@digit@to@l@e@d
 vDisplay
-R0
+R1
 !i10b 1
 !s100 UB]dOAZJ7A7eQDXJX3jmP0
 Izih]1T4aQP5iZ5e2mNDoe2
-R1
 R2
+R0
 w1691584651
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v
@@ -217,7 +218,7 @@ R3
 r1
 !s85 0
 31
-R4
+R12
 !s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display.v|
 !i113 1
@@ -225,12 +226,12 @@ R5
 R6
 n@display
 vDisplay_tb
-R0
+R1
 !i10b 1
 !s100 BcD_4jT`_G81TNRMSn4;X0
 I3J=j0kP[=i:?lo>g49BC]1
-R1
 R2
+R0
 w1691651459
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/Display_tb.v
@@ -246,78 +247,35 @@ R4
 R5
 R6
 n@display_tb
-vDisplayClock_tb
-!s110 1691584417
-!i10b 1
-!s100 e`i<TD]`6l:M=oXK@PZmk3
-I<RIoN9?S7]ReVU`G`VS0`0
+vrandomNoiseDebouncer
 R1
-R2
-w1691584250
-8D:\Personal stuff\Ethergate lab\Projects\Alarm Clock\Code\Display\Display_tb.v
-FD:\Personal stuff\Ethergate lab\Projects\Alarm Clock\Code\Display\Display_tb.v
-L0 1
-R3
-r1
-!s85 0
-31
-!s108 1691584417.000000
-!s107 D:\Personal stuff\Ethergate lab\Projects\Alarm Clock\Code\Display\Display_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\Personal stuff\Ethergate lab\Projects\Alarm Clock\Code\Display\Display_tb.v|
-!i113 1
-R5
-R6
-n@display@clock_tb
-vMUX8to1
-!s110 1691748965
 !i10b 1
-!s100 1go^X539WMEE>A0@WLj_e0
-IGlz6l0f0OE1biWoQRRBL40
-R1
+!s100 KeiYXVg:_VBEcTX^i82?B1
+ID<SBLW<hR4NZ6LfEl^U903
 R2
-w1691589366
-8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v
-FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v
-L0 1
-R3
-r1
-!s85 0
-31
-!s108 1691748965.000000
-!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/MUX8to1.v|
-!i113 1
-R5
-R6
-n@m@u@x8to1
-vrandomize_button_noise
-R7
-!i10b 1
-!s100 BPgc4N:7a1=4QMk4i>NBY2
-I:A8TlMl2hN^Bz1>m>FmYB3
-R1
-R2
-w1692799596
-8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v
-FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v
+R0
+w1694519235
+8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomNoiseDebouncer.v
+FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomNoiseDebouncer.v
 L0 2
 R3
 r1
 !s85 0
 31
-R11
-!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomButtonNoise.v|
+R4
+!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomNoiseDebouncer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/RandomNoiseDebouncer.v|
 !i113 1
 R5
 R6
+nrandom@noise@debouncer
 vRingCounter
-R0
+R1
 !i10b 1
 !s100 gN?FNVYQa1@gg`H5zn@<V3
 IzT<3`;i_EC8d9i8<OHz5V2
-R1
 R2
+R0
 w1691588607
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/RingCounter.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Display/RingCounter.v
@@ -334,12 +292,12 @@ R5
 R6
 n@ring@counter
 vSingleClockDivider
-R0
+R1
 !i10b 1
 !s100 3X`2j;CK[:GWE4ihjPNeS1
 IH4oMm7jkZJ0T8eBOfFX<?2
-R1
 R2
+R0
 w1691664897
 8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/SingleClockDivider.v
 FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Clock Divider/SingleClockDivider.v
@@ -355,24 +313,68 @@ R4
 R5
 R6
 n@single@clock@divider
+vSingleDebouncer
+Z13 !s110 1694519632
+!i10b 1
+!s100 Sao0VDPYLmWR0>mcFFFO=2
+IIf>a>PP]VSlXPLmAkO?P72
+R2
+R0
+w1694518782
+8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v
+FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z14 !s108 1694519632.000000
+!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer.v|
+!i113 1
+R5
+R6
+n@single@debouncer
+vSingleDebouncer_tb
+R13
+!i10b 1
+!s100 k@ho:;BoZGNFQE1=M^an33
+Il_50_OVVAD_1V^gG;zG?W1
+R2
+R0
+w1694467750
+8D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer_tb.v
+FD:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R14
+!s107 D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Personal stuff/Ethergate lab/Projects/Alarm Clock/Code/Debouncer/SingleDebouncer_tb.v|
+!i113 1
+R5
+R6
+n@single@debouncer_tb
 vtb_top
-R7
+R1
 !i10b 1
 !s100 Kj;7S7Ec84n36D8`;ak_Z2
 Ign5aK3_AJ>0lW1V=>zIje1
-R1
 R2
+R0
+R7
 R8
 R9
-R10
 L0 115
 R3
 r1
 !s85 0
 31
+R4
+R10
 R11
-R12
-R13
 !i113 1
 R5
 R6

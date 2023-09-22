@@ -1,4 +1,8 @@
-`timescale 1ns/1ns
+`timescale 1ms/1ms
+/*
+	This module connects the four cascaded counters.
+	We also have a custom reset that happens when the time reaches 23:59. It also resets when any 
+*/
 module CountTime(
     input clk, rst_n, load, en,
     input [3:0] u_min_in, [2:0] z_min_in, [3:0] u_hour_in , [1:0] z_hour_in, 
@@ -17,10 +21,16 @@ module CountTime(
 	wire resetF;
 	reg resetF_ff, resetF_nxt;
 	reg reached_final;
+	reg interval_errors;
 	assign resetF = resetF_ff;
-	always @ * begin
-		reached_final = ((HourResultedTens >= 2'b10) & (HourResultedUnit >= 4'b11) & (MinuteResultedTens >= 3'b101) & (MinuteResultedUnit >=4'b1001));
-		resetF_nxt = rst_n & ~reached_final;
+	always @ (*) begin
+		resetF_nxt = resetF_ff;
+		//it doesn't get here for each change of units, so it doesn't reset early enough
+		$display("in this block at", $time);
+		reached_final = ((HourResultedTens == 2'b10) & (HourResultedUnit == 4'b0011) & (MinuteResultedTens == 3'b101) & (MinuteResultedUnit ==4'b1001));
+		interval_errors = ((HourResultedTens > 2'b10) || (MinuteResultedTens > 3'b101) || (MinuteResultedUnit > 4'b1001) || (HourResultedTens > 4'b1001))
+						   || ((HourResultedUnit > 4'b0011) & ((HourResultedTens == 2'b10) & (MinuteResultedTens == 3'b101) & (MinuteResultedUnit ==4'b1001)));
+		resetF_nxt = rst_n & ~reached_final & ~interval_errors;
 	end
 
 	always @ (posedge clk or negedge rst_n) begin

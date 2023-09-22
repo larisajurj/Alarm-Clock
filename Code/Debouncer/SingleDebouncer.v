@@ -1,4 +1,9 @@
 `timescale 1ms/1ms
+/*
+  This is a module that will be used to debounce each press of a button.
+  Takes consecutively two samples 5ms apart (10ms period clock) from the initial signal 
+  and if they are equal, we get an accurate signal
+*/
 module SingleDebouncer(input clk,rst_n,d, output q);  
   // internal signal definition
   reg val_d1, val_d2, val_save;

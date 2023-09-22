@@ -1,5 +1,7 @@
 `timescale 1ns/1ns
-
+/*
+    TOP module for display
+*/
 module Display(
     input [3:0] clk_u_min_in, [2:0] clk_z_min_in, [3:0] clk_u_hour_in , [1:0] clk_z_hour_in, 
     input [3:0] alarm_u_min_in, [2:0] alarm_z_min_in, [3:0] alarm_u_hour_in , [1:0] alarm_z_hour_in,

@@ -1,4 +1,5 @@
 `timescale 1ms/1ms
+/* Generates random noise for the debouncer to simulate real-like presses */
 module randomNoiseDebouncer(
     input clk,
     output d_out

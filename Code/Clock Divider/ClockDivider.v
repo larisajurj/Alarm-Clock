@@ -1,5 +1,5 @@
 module ClockDivider(
-    input clk, rst,
+    input clk, rst_n,
     output clk_1kHz, clk_1Hz
 );
 
@@ -13,7 +13,8 @@ module ClockDivider(
   	localparam MAX2       = input_fr/output_fr;
   	localparam width_clk2     = 18+1;
 
-    SingleClockDivider#(.width(width_clk2),.MAX(MAX2)) Clock_1kHz(.clk(clk), .rst(rst), .en(1'b1), .div_clk(clk_1kHz));
-    SingleClockDivider#(.width(width_clk),.MAX(MAX)) Clock_1HzClock(.clk(clk), .rst(rst), .en(1'b1), .div_clk(clk_1Hz));
+    SingleClockDivider#(.width(width_clk2),.MAX(MAX2)) Clock_1kHz(.clk(clk), .rst_n(rst_n), .en(1'b1), .div_clk(clk_1kHz));
+    SingleClockDivider#(.width(width_clk),.MAX(MAX)) Clock_1HzClock(.clk(clk), .rst_n(rst_n), .en(1'b1), .div_clk(clk_1Hz));
+	SingleClockDivider#(.width(width_clk3),.MAX(MAX)) Clock_100HzClock(.clk(clk), .rst_n(rst_n), .en(1'b1), .div_clk(clk_1Hz));
 
 endmodule

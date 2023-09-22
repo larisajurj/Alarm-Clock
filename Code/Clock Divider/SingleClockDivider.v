@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 module SingleClockDivider#(parameter width = 4,parameter MAX = 10)
-  			   (input clk,input rst,input en, output div_clk);
+  			   (input clk,input rst_n,input en, output div_clk);
   
   // you can use parameter in order to declare inputs/outputs/internal signal width
   // you can also declare "localparam" this is a type of parameter that can`t be change from outside of the module
@@ -32,8 +32,8 @@ module SingleClockDivider#(parameter width = 4,parameter MAX = 10)
   end
   
   // this always bloc will be synthesize as sequential logic
-  always @(posedge clk or posedge rst) begin
-    if(rst) begin
+  always @(posedge clk or negedge rst_n) begin
+    if(~rst_n) begin
       drive_ff <= 1'b0;
       count_ff <= 'b0;  // if you don`t know the width use 'b0 and the compiler will insert 0 on all defined bits
     end else begin

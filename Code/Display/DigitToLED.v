@@ -1,5 +1,7 @@
 `timescale 1ns/1ns
-
+/*
+    Module that converts the binary digits into the respective catode values
+*/
 module DigitToLED(
     input [3:0] digit,
     output [7:0] C

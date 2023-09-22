@@ -1,10 +1,15 @@
+/*
+	This is a module used to count the IDLE time.
+	It works on a 1s/cycle clock and while it is enabled, it counts to MAX and if reached it sends a carry out signal.
+	The start value can be loaded using the load input. 
+*/
 module Counter#(parameter MAX = 9, parameter WIDTH = 3)(
     input clk, rst_n, en, load, 
 	input [WIDTH-1:0] loadedUnit, 
     output [WIDTH-1:0] resultedUnit,
 	output carryOut
 );
-
+ 
     reg [WIDTH-1:0] resultedUnit_nxt, resultedUnit_ff;
 	reg carryOut_nxt, carryOut_ff;
 	assign resultedUnit = resultedUnit_ff ;
@@ -12,6 +17,8 @@ module Counter#(parameter MAX = 9, parameter WIDTH = 3)(
 
 	always @(*) begin
 		resultedUnit_nxt = resultedUnit_ff;
+		carryOut_nxt = carryOut_ff;
+		
 		if(en || load) begin
 					resultedUnit_nxt = resultedUnit_ff;
 			case(load)

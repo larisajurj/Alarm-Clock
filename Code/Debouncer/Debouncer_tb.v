@@ -1,4 +1,5 @@
 `timescale 1ms/1ms
+
 module debouncer_tb();
     wire d1; wire d2; wire d3; wire d4; wire d5;
     reg clk, rst_n;

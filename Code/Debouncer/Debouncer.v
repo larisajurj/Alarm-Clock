@@ -1,4 +1,7 @@
 `timescale 1us/1us
+/*
+    TOP of all debouncers
+*/
 module Debouncer(
     input clk, rst_n,
     input plus_button, minus_button, program_button, set_alarm_button, turn_off_alarm_button,

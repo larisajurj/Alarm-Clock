@@ -1,4 +1,7 @@
 `timescale 1ns/1ns
+/*
+    8 bit ring counter to select  active low Anode
+*/
 module RingCounter(
     input clk, rst,
     output [7:0] A 
